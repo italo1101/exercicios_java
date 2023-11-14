@@ -10,7 +10,7 @@ public class ex042 {
       System.out.println(contador);
       contador++;
     }
-    System.out.println("Acabou agora!");
+    System.out.println("Acabou!");
 
 
 
