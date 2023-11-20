@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class ex044 {
+public class ex045 {
   public static void main(String[] args) {
     Scanner input = new Scanner(System.in);
       int inicio, fim, incremento, contador;
@@ -14,9 +14,16 @@ public class ex044 {
 
       contador = inicio;
 
-      while(contador <= fim){
-        System.out.println(contador);
-        contador += incremento;
+      if(inicio < fim){
+          while(contador <= fim){
+            System.out.println(contador);
+            contador += incremento;
+          }
+      }else{
+        while(contador >= fim){
+            System.out.println(contador);
+            contador -= incremento;
+        }
       }
     input.close();
   }
