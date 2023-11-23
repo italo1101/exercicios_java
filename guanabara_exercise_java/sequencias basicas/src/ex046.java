@@ -1,15 +1,17 @@
-import java.util.Scanner;
 public class ex046 {
   public static void main(String[] args) {
-    Scanner input = new Scanner(System.in);
-        int contador = 6, resultado;
+        int contador = 6, resultado = 0;
 
         while(contador <= 100){
-            System.out.print(contador +  "+");
+            System.out.print(contador);
+            resultado += contador;
+            
+            if(contador < 100){
+              System.out.print(" + ");
+            }
+            
             contador += 2;
-            resultado = contador + contador;
         }
-        System.out.println("O resultado da soma" + resultado);
-        input.close();
+        System.out.println(" O resultado da soma " + resultado);
   }
 }
