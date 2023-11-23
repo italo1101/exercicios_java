@@ -12,7 +12,7 @@ public class ex048 {
             cont += 1;
         }
 
-        System.out.println("A soma dos números digitador é: " + soma);
+        System.out.println("A soma dos números digitados é: " + soma);
         input.close();
     }
 }
